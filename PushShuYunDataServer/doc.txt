@@ -1,0 +1,41 @@
+
+{
+  "MainDescribe": 主描述
+  "Schedule": 定时任务选项 cron-style风格时间设定
+  "GroupSet": { 分组设置
+        分组id:组配置项
+      "MSS-JACKJONES": {
+        "Base-URL": ip:port
+      }
+  },
+  "ProxyTasks": [代理转发任务列表
+    {
+      "Name": 任务名称
+      "Inbound": {入站配置项
+        "Group": 分组id 与上面id对应
+        "URI": 请求uri
+        "Method": 入站请求HTTP方法
+        "Content-Type": mime类型
+        "Params": 拉取数据http参数
+        "Status-Field":数据状态字段/成功与失败
+        "Status-Code":数据状态码
+        "Data-Point": 有效数据点
+      },
+      "Outbound": {出站配置项
+        "Group": 分组id 与上面id对应
+        "URI": 请求uri
+        "preParseFunction":"" 数据预处理函数(使用.分割)
+        "setHeadersFunction":"" 返回头信息对象 headerObj
+        "Method": 出站请求HTTP方法
+        "Content-Type": "application/json",
+        "Basic-Auth": { Basic认证
+          "Username": Basic认证用户名
+          "Password": Basic认证密码
+        }
+      },
+      "Batch": 一次请求发送数据条数
+      "TaskStatus": 任务状态 start为启动转发状态 其余为停止
+      "Describe": 描述
+    }
+  ]
+}

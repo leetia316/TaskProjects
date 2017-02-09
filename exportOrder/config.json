@@ -1,0 +1,44 @@
+{
+    "cron-style": {
+        "desc": "",
+        "name": "cron-style风格时间设定",
+        "value": {
+            "byMonth": {
+                "ONLY": "0 1 * * *",
+                "JACKJONES": "10 1 * * *",
+                "VEROMODA": "20 1 * * *",
+                "SELECTED": "30 1 * * *",
+                "JLINDEBERG": "40 1 * * *"
+            },
+            "byYear": {
+                "ONLY": "0 2 * * *",
+                "JACKJONES": "30 2 * * *",
+                "VEROMODA": "0 3 * * *",
+                "SELECTED": "30 3 * * *",
+                "JLINDEBERG": "0 4 * * *"
+            }
+        },
+        "type": "Object",
+        "key": "cron-style"
+    },
+    "JAVA_URL_MAP": {
+        "desc": "",
+        "name": "java地址",
+        "value": {
+            "ONLY": "lzsz.mas.mss_java:8085",
+            "JACKJONES": "lzsz.mas.mss_java:8086",
+            "VEROMODA": "lzsz.mas.mss_java:8087",
+            "SELECTED": "lzsz.mas.mss_java:8088",
+            "JLINDEBERG": "lzsz.mas.mss_java:8089"
+        },
+        "type": "Object",
+        "key": "JAVA_URL_MAP"
+    },
+    "FILE_ROOT_PATH": {
+        "desc": "",
+        "name": "文件根目录",
+        "value": "/opt/gfs/source/shoprank",
+        "type": "String",
+        "key": "FILE_ROOT_PATH"
+    }
+}

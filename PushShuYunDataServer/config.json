@@ -1,0 +1,20 @@
+{
+
+  "Schedule":{
+    "desc" : "",
+    "name" : "cron-style风格时间设定",
+    "value" : "30 3 * * *",
+    "type" : "String",
+    "key" : "Schedule"
+  },
+
+  "ShowLOG":{
+    "desc" : "",
+    "name" : "Log开关",
+    "value" : true,
+    "type" : "Boolean",
+    "key" : "ShowLOG"
+  }
+}
+
+

@@ -1,0 +1,59 @@
+{
+  "db": {
+    "name": "REDIS数据库DB",
+    "key": "db",
+    "value": "10",
+    "desc": "连接redis的哪个DB",
+    "type": "String"
+  },
+  "authPass": {
+    "name": "REDIS服务器密钥",
+    "key": "authPass",
+    "value": "appcan.cn",
+    "desc": "连接REDIS服务器所传入的密码",
+    "type": "String"
+  },
+  "port": {
+    "name": "端口 ",
+    "key": "port",
+    "value": 6379,
+    "desc": "任务队列服务器REDIS所使用的端口",
+    "type": "Number"
+  },
+  "host": {
+    "name": "REDIS主机地址",
+    "key": "host",
+    "value": "172.16.117.3",
+    "desc": "任务所使用的REDIS地址",
+    "type": "String"
+  },
+  "sentinelName": {
+    "name": "主从集群名称",
+    "key": "sentinelName",
+    "value": "",
+    "desc": "REDIS主从集群名称",
+    "type": "String"
+  },
+  "sentinels": {
+    "name": "主从集群地址组",
+    "key": "sentinels",
+    "value": "",
+    "desc": "任务服务所连接的REDIS主从集群地址",
+    "type": "String"
+  },
+  "cluster": {
+    "name": "分片集群",
+    "key": "cluster",
+    "value": "",
+    "desc": "分片集群地址组",
+    "type": "String"
+  },
+  "type": {
+    "name": "集群类型 ",
+    "key": "type",
+    "value": 0,
+    "desc": "0：单机 1：主从 2：分片",
+    "type": "Number"
+  },
+  "logstate": false
+}

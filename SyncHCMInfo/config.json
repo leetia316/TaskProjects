@@ -1,0 +1,52 @@
+{
+	"guideEmployeeList" : {
+		"desc" : "",
+		"name" : "导购员信息接口",
+		"value" : "/HumanResourceSB/HrHcmECRetailEmployeeListRestProxy/ListECRetailEmployee",
+		"type" : "String",
+		"key" : "guideEmployeeList"
+	},
+	"HCMBaseURL" : {
+		"desc" : "",
+		"name" : "绫致HCM系统服务base地址",
+		"value" : "http://122.49.45.1:8080",
+		"type" : "String",
+		"key" : "HCMBaseURL"
+	},
+	"HCMBasicAuth":{
+	  "desc" : "",
+	  "name" : "HCM接口认证的账户密码",
+	  "value" : {
+		"username":"esb_appcan01",
+		"password":"best_7890"
+	  },
+	  "type" : "Object",
+	  "key" : "HCMBasicAuth"
+	},
+  "cron-style":{
+	"desc" : "",
+	"name" : "cron-style风格时间设定",
+	"value" : "30 2 * * *",
+	"type" : "String",
+	"key" : "cron-style"
+  },
+  "RedisPoolOption":{
+	"desc" : "Redis",
+	"name" : "RedisPool配置",
+	"value" : {
+	  "db":"8",
+	  "poolsize":"10",
+	  "host":"172.16.117.3",
+	  "port":"6379",
+	  "authpass":"appcan.cn",
+	  "type":"0",
+	  "sentinels":[{"host":"","port":""}],
+	  "sentinelName":"",
+	  "cluster":[{"host":"","port":""}]
+	},
+	"type" : "Object",
+	"key" : "RedisPoolOption"
+  }
+}
+
+

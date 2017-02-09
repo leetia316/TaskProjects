@@ -1,0 +1,28 @@
+{
+  "cron-style":{
+	"desc" : "",
+	"name" : "cron-style风格时间设定",
+	"value" : "*/5 * * * *",
+	"type" : "String",
+	"key" : "cron-style"
+  },
+  "RedisPoolOption":{
+	"desc" : "Redis",
+	"name" : "RedisPool配置",
+	"value" : {
+	  "db":"7",
+	  "poolsize":"10",
+	  "host":"54d99673fbec42b1.m.cnbja.kvstore.aliyuncs.com",
+	  "port":"6379",
+	  "authpass":"LINGZHIappcan1",
+	  "type":"0",
+	  "sentinels":[{"host":"","port":""}],
+	  "sentinelName":"",
+	  "cluster":[{"host":"","port":""}]
+	},
+	"type" : "Object",
+	"key" : "RedisPoolOption"
+  }
+}
+
+
